@@ -1,8 +1,9 @@
 <p>
-  UserName : <input type = "text" name = "userName" value = "{{userName}}" /><br/>
+  UserName : <input type = "text" name = "userName" [(ngModel)]="userName"/><br/>
 
-  Password : <input type = "password" name = "password" value = "{{password}}" /><br/>
+  Password : <input type = "password" name = "password"  [(ngModel)]="password" /><br/>
 
-  <button click()=handleLogin() ></button>
+  <button (click)=handleLogin() >Login</button>
+
 
 </p>
